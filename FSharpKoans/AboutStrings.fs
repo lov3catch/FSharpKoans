@@ -95,7 +95,9 @@ module ``about strings`` =
         (* It's time to apply what you've learned so far. Fill in the function below to
            make the asserts pass *)
         let getFunFacts x =
-            "example"
+            if x = 3 then "3 doubled is 6, and 3 tripled is 9!"
+            elif x = 6 then "6 doubled is 12, and 6 tripled is 18!"
+            else ""
 
         let funFactsAboutThree = getFunFacts 3
         let funFactsAboutSix = getFunFacts 6
